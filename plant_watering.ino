@@ -102,7 +102,7 @@ void loop()
   Serial.println(AnalogValue);
   
   ///////////////////////////////////////////////////////////////// Feuchtigkeitssensor 
-  UmidityPercent = map(AnalogValue, 300, 554, 0, 100); 
+  UmidityPercent = map(AnalogValue, 590, 248, 0, 100); 
   /////////////////////////////////////////////////////////////////
   
   moisture = constrain(moisture, 0, 100);
