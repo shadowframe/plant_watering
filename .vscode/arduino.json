@@ -2,5 +2,5 @@
     "sketch": "plant_watering.ino",
     "output": "build",
     "board": "arduino:avr:uno",
-    "port": "/dev/tty.usbserial-222140"
+    "port": "COM3"
 }

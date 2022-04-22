@@ -102,7 +102,7 @@ void loop()
   Serial.println(AnalogValue);
   
   ///////////////////////////////////////////////////////////////// Feuchtigkeitssensor 
-  UmidityPercent = map(AnalogValue, 590, 248, 0, 100); 
+  UmidityPercent = map(AnalogValue, 248, 590, 0, 100); 
   /////////////////////////////////////////////////////////////////
   
   moisture = constrain(moisture, 0, 100);
@@ -193,7 +193,7 @@ switch (lcd_key)
  }
  }
 void PumpOn(){
-    digitalWrite(pump, HIGH);
+    digitalWrite(pump, LOW);
 }
 void LowLevelLed(){
     digitalWrite(lowlevelled, HIGH);  
@@ -202,5 +202,5 @@ void LowLevelLedOFF(){
     digitalWrite(lowlevelled, LOW);
 }
 void PumpOff(){
-    digitalWrite(pump, LOW);
+    digitalWrite(pump, HIGH);
 }
